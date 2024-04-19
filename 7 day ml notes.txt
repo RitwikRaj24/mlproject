@@ -43,3 +43,12 @@ Day 3
 	
 	MAPPING WHICH CODE NEEDS TO BE WHERE
 
+Day 4 
+
+As is with people starting out with Data Science , most of the time is spent working on Jupyter notebook , but going forward need to 
+	- convert it into modular coding 
+	- implement that into a CI/CD pipeline 
+	- once it goes into production , it should be continuously 	  running
+
+- Starting with data_ingestion.py : data from the big data team that is stored in databases like MongoDB , Hadoop etc .
+Your job is to read the data from the data sources  
