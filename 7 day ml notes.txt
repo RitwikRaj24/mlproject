@@ -1,0 +1,45 @@
+Day 1 
+
+- Create a new GitHub repository 
+- Create folder on local system to then sync with the GitHub repository 
+- Creating an environment 
+- activating the environment (condo activate venv/) 
+- Clone new repository and sync with GitHub to commit all the code 
+- Create a .gitignore file (some of the files that need not be committed in GitHub will all be removed )
+- Use git pull to update local workflow 
+- setting up setup.py , requirements.txt 
+
+	setup.py will be responsible for creating the machine learning  		
+	application as a package , which can then be used by anyone 
+- creating a 'src' (source) folder 
+
+# to trigger the setup.py file , enter '-e .'
+
+Day 2 
+
+- Created src/components : all the modules that will be created like 
+	- data ingestion 
+	- data transformation 
+	- model trainer 
+
+- Created src/pipeline : will have the training and prediction pipeline 
+	- train pipeline : calling this will call the components folder
+	- predict pipeline : after model creation , for prediction on new data 
+ 
+- Since entire project implementation will happen inside the src folder , create 3 files 
+	- logger.py : for logging
+	- exception.py : for exception handling 
+	- utils.py : any functionalities that will be used in the entire application (eg. for reading a dataset into a database , will create the mongoldb client over here or for saving the model on the cloud , can write code over here ) 
+
+
+Day 3 
+
+- Created Notebook folder that has 
+	- data 
+	- eda notebook 
+	- model training notebook 
+
+- Everything that is being written in the Model_training notebook needs to be rewritten in a modular programming method , in src folder
+	
+	MAPPING WHICH CODE NEEDS TO BE WHERE
+
